@@ -32,5 +32,5 @@ jobs:
 
     - name: Run make validate
       run: |
-      export PATH=$PATH:$HOME/.local/bin
-      make validate
+        export PATH=$PATH:$HOME/.local/bin
+        make validate
