@@ -1,6 +1,6 @@
 # End-to-End Python Template
 
-This is a Python project template that provides a starting point for building Python applications with essential development tools such as tests, linting, formatting, coverage, and CI/CD setup using Poetry to manage dependencies.
+This is a Python project template that provides a starting point for building Python applications with essential development tools such as tests, linting, formatting, typing, coverage, and CI/CD setup using Poetry to manage dependencies.
 
 &nbsp; 
 ## Prerequisites
