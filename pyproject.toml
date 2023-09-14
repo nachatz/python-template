@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Update according to your use-case
+[tool.poetry]
+name = "project_name"
+version = "1.0.0"
+description = "Template for Python applications"
+authors = ["Nikolas Achatz <nik@example.com>"]
+
+# Add dependencies for production codebase
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.3"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "*"
+black = "*"
+pytest = "*"
+pytest-cov = "*"
+prospector = "^1.10.2"
+types-requests = "^2.31.0" 
+
