@@ -1,12 +1,10 @@
-name: Validate with Poetry and Make
+name: Validate pipeline
 
 on:
-  push:
-    branches:
-      - main 
+  push: 
 
 jobs:
-  build:
+  test-codebase:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +28,6 @@ jobs:
         export PATH=$PATH:$HOME/.local/bin
         make install
 
-  test:
     - name: Run tests and validation
       run: |
         export PATH=$PATH:$HOME/.local/bin
