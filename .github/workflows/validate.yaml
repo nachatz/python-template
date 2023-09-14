@@ -1,0 +1,33 @@
+name: Validate with Poetry and Make
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python -
+        export PATH="$HOME/.local/bin:$PATH"
+      env:
+        POETRY_HOME: $HOME/.poetry
+        POETRY_VERSION: 1.5.1
+
+    - name: Install project dependencies
+      run: poetry install
+
+    - name: Run make validate
+      run: make validate
