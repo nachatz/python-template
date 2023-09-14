@@ -30,7 +30,8 @@ jobs:
         export PATH=$PATH:$HOME/.local/bin
         make install
 
-    - name: Run make validate
+  test:
+    - name: Run tests and validation
       run: |
         export PATH=$PATH:$HOME/.local/bin
         make validate
