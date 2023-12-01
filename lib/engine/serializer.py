@@ -7,7 +7,7 @@ Sample utility functions for serializing a API response to a pydantic model
 
 import json
 import requests
-from lib.models.post import PostModel
+from lib.models import PostModel
 
 API_URL = "https://jsonplaceholder.typicode.com/posts/1"
 

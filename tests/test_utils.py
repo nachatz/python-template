@@ -1,5 +1,5 @@
-from lib.engine.serializer import update_post
-from lib.models.post import PostModel
+from lib.engine import update_post
+from lib.models import PostModel
 
 
 def mocked_body():
