@@ -5,24 +5,18 @@ lock:
 	@poetry lock
 
 run:
-	@poetry run python3 main.py
+	poetry run python examples/main.py
 
 # Use --check to avoid auto format
 fmt:
-	@poetry run black $(FLAGS) .
+	@poetry run black src tests
 
 mypy:
-	@poetry run mypy .
-
-pylint:
-	@poetry run pylint src
-
-test:
-	@poetry run pytest
+	@poetry run mypy src tests
 
 check: fmt mypy
 	@poetry run prospector --profile prospector.yaml
 
 validate: check
-	@poetry run coverage run --source=lib -m pytest && \
+	@poetry run coverage run --source=src -m pytest && \
 	poetry run coverage report -m 

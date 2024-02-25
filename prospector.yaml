@@ -9,6 +9,7 @@ ignore-paths:
 pylint:
   disable:
     - cyclic-import
+    - missing-module-docstring
 
 pycodestyle:
-  disable: E203,E203 
+  disable: E203,E203

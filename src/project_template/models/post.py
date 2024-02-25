@@ -16,9 +16,7 @@ class PostModel(BaseModel):
         title (str): The title of the post.
         body (str): The content or body of the post.
 
-    Usage:
-        You can create instances of this class to work with blog post data. For example:
-
+    Examples:
         >>> post = PostModel(userId=1, id=2, title="Sample Post", body="This is the post content.")
         >>> post = PostModel(**requests.get(API_URL, timeout=15).json())
     """
