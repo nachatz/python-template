@@ -11,7 +11,7 @@ from project_template.models import PostModel
 
 
 class Serializer:
-    """ A class for serializing API responses to pydantic models.
+    """A class for serializing API responses to pydantic models.
 
     Attributes:
         api_url (str): The URL of the API endpoint.
@@ -32,7 +32,7 @@ class Serializer:
 
     @staticmethod
     def make_request() -> PostModel:
-        """ Makes an HTTP GET request to an API and create a PostModel object from the response.
+        """Makes an HTTP GET request to an API and create a PostModel object from the response.
 
         Returns:
             PostModel: A PostModel object created from the API response.
@@ -42,7 +42,7 @@ class Serializer:
 
     @staticmethod
     def pretty_print(*, post: PostModel) -> None:
-        """ Pretty-print the attributes of a PostModel object.
+        """Pretty-print the attributes of a PostModel object.
 
         Args:
             post (PostModel): The PostModel object to pretty-print.
