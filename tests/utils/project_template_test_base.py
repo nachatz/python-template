@@ -6,8 +6,8 @@ class ProjectTemplateTestBase:
     
     """
     
-    def setUp(self):
+    def setUp(self) -> None:
         pass
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass

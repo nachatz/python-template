@@ -29,7 +29,7 @@ class TestSerializer(ProjectTemplateTestBase):
 
         mocker.patch("project_template.engine.Serializer.make_request", dummy_request)
 
-    def test_update_post(self):
+    def test_update_post(self) -> None:
         """ Validates updating a post """
         
         expected_body = "~ Seg Fault ~"

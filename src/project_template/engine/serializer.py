@@ -20,7 +20,7 @@ class Serializer:
     api_url: str = "https://jsonplaceholder.typicode.com/posts/1"
 
     @staticmethod
-    def update_post(*, post: PostModel) -> PostModel:
+    def update_post(*, post: PostModel) -> None:
         """
         Update the 'body' attribute of a PostModel object.
 
