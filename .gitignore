@@ -2,3 +2,7 @@
 __pycache__
 .pytest_cache
 .coverage
+.vscode
+
+# poetry lock -- remove if desired to commit lock file
+poetry.lock

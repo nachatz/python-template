@@ -1,4 +1,8 @@
-# End-to-End Python Template
+# End-to-End Python Template w/ Poetry
+[![v2.0.0](https://img.shields.io/badge/version-v2.0.0-blue.svg)](https://github.com/nachatz/python-template)
+[![Test](https://github.com/nachatz/python-template/actions/workflows/validate.yaml/badge.svg)](https://github.com/nachatz/python-template/actions/workflows/validate.yaml)
+[![License](https://img.shields.io/badge/license-Apache%202-brightgreen.svg)](https://github.com/nachatz/python-template/blob/master/LICENSE.txt)
+
 
 This is a Python project template that provides a starting point for building Python applications with essential development tools such as tests, linting, formatting, typing, coverage, and CI/CD setup using Poetry to manage dependencies.
 
@@ -90,7 +94,6 @@ To use this template for your Python project, follow these steps:
 Run 
 ```bash
 make install
-make lock`
 ```
 
 Ensure you have installed **Poetry & Python**
@@ -133,15 +136,11 @@ This project includes a set of make commands to help you manage your development
 
 - `make install`: Install project dependencies, including development extras.
 
-- `make lock`: Lock project dependencies using Poetry.
-
 - `make fmt`: Format code using Black. Use the FLAGS variable to pass additional formatting options. Example: make fmt FLAGS="--exclude some_folder".
 
 - `make mypy`: Run MyPy type checking.
 
 - `make pylint`: Run pylint for code analysis.
-
-- `make test`: Run pytest for testing.
 
 - `make check`: Run formatting and type checking (fmt and mypy).
 
