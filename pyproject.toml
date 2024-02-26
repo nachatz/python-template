@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 # Update according to your use-case
 [tool.poetry]
 name = "project_template"
-version = "1.0.0"
+version = "2.0.0"
 description = "Template for Python applications"
 authors = ["Nikolas Achatz <nik@example.com>"]
 packages = [{ include = "project_template", from = "src" }]

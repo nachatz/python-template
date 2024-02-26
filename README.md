@@ -94,7 +94,6 @@ To use this template for your Python project, follow these steps:
 Run 
 ```bash
 make install
-make lock`
 ```
 
 Ensure you have installed **Poetry & Python**
@@ -136,8 +135,6 @@ This project includes a set of make commands to help you manage your development
 
 
 - `make install`: Install project dependencies, including development extras.
-
-- `make lock`: Lock project dependencies using Poetry.
 
 - `make fmt`: Format code using Black. Use the FLAGS variable to pass additional formatting options. Example: make fmt FLAGS="--exclude some_folder".
 

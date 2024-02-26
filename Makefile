@@ -1,13 +1,10 @@
 install:
 	@poetry install --all-extras --with dev
-
-lock:
-	@poetry lock
+	poetry lock
 
 run:
 	poetry run python examples/main.py
 
-# Use --check to avoid auto format
 fmt:
 	@poetry run black src tests
 
