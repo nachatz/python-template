@@ -1,5 +1,6 @@
 install:
-	@poetry install --all-extras --with dev	
+	@poetry install --all-extras --with dev
+	poetry lock
 
 lock:
 	@poetry lock
