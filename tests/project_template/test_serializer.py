@@ -1,8 +1,8 @@
+from pytest import fixture
+
 from project_template.engine import Serializer
 from project_template.models import PostModel
 from tests.utils import ProjectTemplateTestBase
-from pytest import fixture
-
 
 class TestSerializer(ProjectTemplateTestBase):
     """Test Serializer class
