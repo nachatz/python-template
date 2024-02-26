@@ -24,10 +24,15 @@ jobs:
     - name: Install Poetry
       uses: snok/install-poetry@v1
 
+    - name: Generate Poetry lock file
+      run: |
+        export PATH=$PATH:$HOME/.local/bin
+        poetry lock
+
     - name: Install dev dependencies
       run: |
         export PATH=$PATH:$HOME/.local/bin
-        make install
+        poetry install
 
     - name: Run tests and validation
       run: |
